@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fullscreen and resizing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="size-full overflow-hidden relative">
+  <section id="loading-section">
+        <h1 id="percentage-loader">Loading... 0%</h1>  
+        <div id="loading-container">
+            <div id="loading-bar">
+
+            </div>
+        </div>
+    </section>
+  <div class="mobile-controls md:hidden">
+    <img id="w-key" class="w-16 absolute left-12 bottom-12" src="assets/images/w.png" alt="">
+    <img id="s-key" class="w-16 absolute bottom-0 left-12" src="assets/images/s.png" alt="">
+    <img id="a-key" class="w-16 absolute left-0 bottom-0" src="assets/images/a.png" alt="">
+    <img id="d-key" class="w-16 absolute left-24 bottom-0" src="assets/images/d.png" alt="">
+    <img id="shift-key" class="w-16 absolute bottom-0 right-0" src="assets/images/shift.png" alt="">
+  </div>
+  <audio loop>
+    <source src="assets/music/game.mp3" type="audio/mpeg" />
+  </audio>
+  <canvas class="webgl"></canvas>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
